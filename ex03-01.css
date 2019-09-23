@@ -1,0 +1,23 @@
+#header {
+	background-image: url(images/header_bg.jpg);
+	background-repeat: no-repeat;
+	height: 129px;
+	width: 800px;
+}
+#content {
+	background-image: url(images/content_bg.jpg);
+	background-repeat: repeat-y;
+	width: 800px;
+}
+#footer {
+	background-image: url(images/footer_bg.jpg);
+	height: 52px;
+	width: 800px;
+}
+#contentL {
+	float: left;
+	width: 245px;
+}
+#contentR {
+	margin-left: 245px;
+}
