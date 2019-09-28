@@ -1,8 +1,8 @@
-@charset"utf-B";
+@charset"utf-8";
 #header {
 	background-image: url(images/header_bg.jpg);
 	background-repeat: no-repeat;
-	height: 129px;
+	height: 130px;
 	width: 800px;
 }
 #content {
