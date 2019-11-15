@@ -161,3 +161,25 @@ body {
 .floatright {
 	float: right;
 }
+h1 {
+	font-size: 20px;
+	color: #000;
+	background-image: url(images/h1_bg.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	padding-bottom: 25px;
+}
+h2 {
+	font-size: 16px;
+	color: #F00;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	padding-left: 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+	border-left-color: #F00;
+}
+h3 {
+	font-size: 16px;
+	color: #000;
+}
