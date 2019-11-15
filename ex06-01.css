@@ -158,9 +158,11 @@ body {
 .clearboth {
 	clear: both;
 }
+
 .floatright {
 	float: right;
 }
+
 h1 {
 	font-size: 20px;
 	color: #000;
@@ -175,11 +177,9 @@ h2 {
 	margin-top: 15px;
 	margin-bottom: 20px;
 	padding-left: 10px;
-	border-left-width: 5px;
 	border-left-style: solid;
-	border-left-color: #F00;
+	border-bottom-width: 5px;
 }
 h3 {
 	font-size: 16px;
-	color: #000;
 }
