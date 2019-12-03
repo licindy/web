@@ -132,7 +132,7 @@ img, object, embed, video {
 
 /* 桌面版面: 769px 到最大 1232px。樣式繼承自: 行動版面和表格版面。 */
 
-@media only screen and (min-width: 1232x) {
+@media only screen and (min-width: 769x) {
 .gridContainer {
 	width: 88.2%;
 	max-width: 950px;
