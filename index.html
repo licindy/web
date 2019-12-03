@@ -1,60 +1,51 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Cute Design Studio</title>
-<style type="text/css">
-body,td,th {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 11px;
-	color: #666666;
-	text-align: center;
-}
-body {
-	background-image: url(images/cute_design_bg.png);
-	background-repeat: repeat-x;
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-}
-#apDiv1 {
-	position: absolute;
-	left: 241px;
-	top: 632px;
-	width: 280px;
-	height: 20px;
-	z-index: 3;
-}
-#apDiv2 {
-	position: absolute;
-	left: 151px;
-	top: 102px;
-	width: 455px;
-	height: 312px;
-	z-index: 1;
-}
-#apDiv3 {
-	position: absolute;
-	left: 130px;
-	top: 458px;
-	width: 500px;
-	height: 126px;
-	z-index: 2;
-}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>超會爬！寶寶爬行大賽</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="kissbaby.css" rel="stylesheet" type="text/css">
+<!-- 
+若要深入了解檔案頂端 html 標籤周圍的條件式註解:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
 
-.noborder {
-	border-top-style: none;
-	border-right-style: none;
-	border-bottom-style: none;
-	border-left-style: none;
-}
-</style>
+如果您使用自訂的 Modernizr 組建 (http://www.modernizr.com/)，請執行下列動作:
+* 在這裡將連結插入您的 js
+* 將下列連結移至 html5shiv
+* 將「no-js」類別新增至頂端的 html 標籤
+* 如果您在 Modernizr 組建中包含 MQ Polyfill，也可以將連結移至 respond.min.js 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
 </head>
-
 <body>
-<div id="apDiv1"> Copyright &copy; Cute Design Studio All rights reserved. </div>
-<div id="apDiv2"><a href="main.html"><img src="images/cute_design_logo.png" alt="進入首頁" width="455" height="312" class="noborder" /></a></div>
-<div id="apDiv3"><a href="main.html"><img src="images/intro.jpg" alt="進入首頁" width="500" height="126" class="noborder" /></a></div>
+<div class="gridContainer clearfix">
+  <div id="header"></div>
+  <div id="mainimg"><img src="images/mainimg.jpg" alt="活動圖片"></div>
+  <div id="content">
+    <h1>活動說明</h1>
+    <p>您家的寶貝會爬了嗎？快來參加 KissBaby 寶寶爬行大賽！<br>
+    冠軍將獨得大獎一萬元禮卷，還有更多好康等著您喔！ </p>
+    <p>家中沒有寶寶也可以參加喔！只要參加預測冠軍活動，<br>
+      即可參加投票抽獎活動，將有 10 名幸運投票者，可獲贈 KissBaby 禮卷 500 元喔！ </p>
+  </div>
+  <div id="sidebar">
+    <h2>活動時間</h2>
+    <p>12/23 (日) PM 2:50</p>
+    <h2>報名期限</h2>
+    <p>即日起至 12/17(一) </p>
+    <h2>活動地點</h2>
+    <p>KissBaby 台北總店</p>
+  </div>
+  <div id="footer">Copyright (C) KissBaby, All Rights Reserved.</div>
+</div>
 </body>
 </html>
