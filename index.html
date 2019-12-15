@@ -1,51 +1,153 @@
-<!doctype html>
-<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
-<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
-<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="">
-<!--<![endif]-->
+<!DOCTYPE html> 
+<html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>超會爬！寶寶爬行大賽</title>
-<link href="boilerplate.css" rel="stylesheet" type="text/css">
-<link href="kissbaby.css" rel="stylesheet" type="text/css">
-<!-- 
-若要深入了解檔案頂端 html 標籤周圍的條件式註解:
-paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+<link href="jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<style type="text/css">
+@import url("kissbaby.css");
 
-如果您使用自訂的 Modernizr 組建 (http://www.modernizr.com/)，請執行下列動作:
-* 在這裡將連結插入您的 js
-* 將下列連結移至 html5shiv
-* 將「no-js」類別新增至頂端的 html 標籤
-* 如果您在 Modernizr 組建中包含 MQ Polyfill，也可以將連結移至 respond.min.js 
--->
-<!--[if lt IE 9]>
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<script src="respond.min.js"></script>
-</head>
-<body>
-<div class="gridContainer clearfix">
-  <div id="header"></div>
-  <div id="mainimg"><img src="images/mainimg.jpg" alt="活動圖片"></div>
-  <div id="content">
-    <h1>活動說明</h1>
-    <p>您家的寶貝會爬了嗎？快來參加 KissBaby 寶寶爬行大賽！<br>
-    冠軍將獨得大獎一萬元禮卷，還有更多好康等著您喔！ </p>
-    <p>家中沒有寶寶也可以參加喔！只要參加預測冠軍活動，<br>
-      即可參加投票抽獎活動，將有 10 名幸運投票者，可獲贈 KissBaby 禮卷 500 元喔！ </p>
-  </div>
-  <div id="sidebar">
-    <h2>活動時間</h2>
-    <p>12/23 (日) PM 2:50</p>
-    <h2>報名期限</h2>
-    <p>即日起至 12/17(一) </p>
-    <h2>活動地點</h2>
-    <p>KissBaby 台北總店</p>
-  </div>
-  <div id="footer">Copyright (C) KissBaby, All Rights Reserved.</div>
+img {
+	height: auto;
+	width: 100%;
+}
+</style>
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header" data-theme="b">
+		<h1>超會爬！寶寶爬行大賽</h1>
+	</div>
+	<img src="images/mainimg.jpg" width="950" height="288">
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#page2">活動資訊</a></li>
+            <li><a href="#page3">活動方式</a></li>
+			<li><a href="#page4">獎品簡介</a></li><li><a href="#page5">我要報名</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer" data-theme="c">
+		<h4>Copyright &copy; KissBaby, All Rights Reserved.</h4>
+	</div>
 </div>
+
+<div data-role="page" id="page2">
+	<div data-role="header" data-theme="b">
+		<h1>活動資訊</h1>
+	</div>
+	<img src="images/title01.jpg" width="950" height="133">
+	<div data-role="content">
+	  <p>您家的寶貝會爬了嗎？</p>
+	  <p>快來參加 KissBaby 寶寶爬行大賽！</p>
+	  <p>冠軍將獨得大獎一萬元禮卷，還有更多好康等著您喔！ <br>
+      </p>
+	  <ul>
+	    <li>活動日期：12/23 (日) PM 2:50</li>
+	    <li>活動地點：KissBaby 台北總店</li>
+	    <li>報名期限：即日起至 12/17(一)</li>
+      </ul><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d835.9591445117662!2d120.23316111729967!3d22.99058081753365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e76bea4df0e25%3A0xe307d34670241186!2z5Y2X57Sh6LO854mp5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1576435385770!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+	<div data-role="footer" data-theme="c">
+		<h4>Copyright &copy; KissBaby, All Rights Reserved.</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page3">
+	<div data-role="header" data-theme="b">
+		<h1>活動方式</h1>
+	</div>
+	<img src="images/title02.jpg" width="950" height="133">
+	<div data-role="content" data-theme="d">
+	  <div class="ui-grid-a">
+	    <div class="ui-block-a">
+	      <h3>報名方式</h3>
+	      <ul>
+	        <li>請從首頁點選「我要報名」鈕, 進入該頁面輸入您的報名資料。</li>
+	        <li>本網站收到報名訊息後，會立刻發送 Email 確認報名資料, 確認後即可獲得參加憑證。</li>
+	        <li>活動當日請憑證入場。</li>
+          </ul>
+        </div>
+	    <div class="ui-block-b">
+	      <h3>活動流程與注意事項</h3>
+	      <ul>
+	        <li>活動開始時間：PM 02:50 </li>
+	        <li>開放入場時間：PM 01:30</li>
+	        <li>建議您提前抵達現場，以聽取現場流程說明。</li>
+	        <li>請自行準備能吸引寶寶爬行的玩具或物品。</li>
+          </ul>
+        </div>
+      </div>
+	</div>
+	<div data-role="footer" data-theme="c">
+		<h4>Copyright &copy; KissBaby, All Rights Reserved.</h4>
+	</div>
+</div>
+
+<div id="page4" data-role="page" data-theme="d">
+	<div data-role="header" data-theme="b">
+		<h1>獎品簡介</h1>
+	</div>
+	<img src="images/title03.jpg" width="950" height="133">
+	<div data-role="content">
+	  <div data-role="collapsible-set">
+	    <div data-role="collapsible" data-theme="b">
+	      <h3>報名獎： 5 名</h3>
+	      <p>前 5 位報名的寶寶, 致贈 KissBaby 新型奶瓶一個 </p>
+        </div>
+	    <div data-collapsed="true" data-role="collapsible" data-theme="b">
+	      <h3>投票獎： 10 名</h3>
+	      <p>參與冠軍預測活動者, 抽出其中 10 名, 致贈 KissBaby 禮券 $500 元</p>
+        </div>
+	    <div data-collapsed="true" data-role="collapsible" data-theme="b">
+	      <h3>活動獎： 3 名</h3>
+	      <p>現場參加活動獲得前 3 名的寶寶, 還可獲得下列大獎： </p>
+	      <ul>
+	        <li>頭獎 1 名：寶寶衣服 3 套 + KissBaby 禮券 $10000 元</li>
+	        <li>貳獎 1 名：寶寶衣服 2 套 + KissBaby 禮券 $8000元</li>
+	        <li>參獎 1 名：寶寶衣服 1 套 + KissBaby 禮券 $5000元<br>
+            </li>
+          </ul>
+        </div>
+      </div>
+	</div>
+	<div data-role="footer" data-theme="c">
+		<h4>Copyright &copy; KissBaby, All Rights Reserved.</h4>
+	</div>
+</div>
+<div data-role="page" id="page5">
+  <div data-role="header" data-theme="b">
+    <h1>我要報名</h1>
+  </div>
+  <img src="images/title04.jpg" width="950" height="133">
+  <div data-role="content" data-theme="d">
+    <p>前五位報名者可獲得 KissBaby 新型奶瓶一個！行動要快唷</p>
+    <form name="form1" method="get" action="mailto:service@flag.com.tw">
+      <div data-role="fieldcontain">
+        <label for="textinput2">您的姓名:</label>
+        <input name="textinput2" type="text" id="textinput2" value="" data-theme="d"  />
+      </div>
+      <div data-role="fieldcontain">
+        <label for="textinput">連絡電話:</label>
+        <input name="textinput" type="text" id="textinput" value="" data-theme="d"  />
+      </div>
+      <div data-role="fieldcontain">
+        <p>
+          <label for="textarea">請寫下寶寶的姓名、年齡、注意事項:</label>
+          <textarea name="textarea" cols="40" rows="8" id="textarea" data-theme="d"></textarea>
+          <input type="submit" value="寄出報名資料" />
+        </p>
+      </div>
+    </form>
+    <p>&nbsp;</p>
+  </div>
+  <div data-role="footer" data-theme="c">
+    <h4>Copyright &copy; KissBaby, All Rights Reserved.</h4>
+  </div>
+</div>
+
 </body>
 </html>
