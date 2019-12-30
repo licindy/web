@@ -230,24 +230,6 @@ body {
 	padding: 5px;
 }
 
-/*攝影作品*/
-#contentPhoto {
-	width: 590px;
-	border-right: 8px solid #FFC17F;
-	text-align: center;
-}
-.photolist {
-	float: left;
-	width: 175px;
-	height: 135px;
-	margin: 0 0 20px 15px;
-	padding-top: 30px;
-	background: url(images/photo_bg.gif) no-repeat;
-}
-.photolist p {
-	margin: 0;
-}
-
 /*桌布下載*/
 #contentDL {
 	width: 570px;
@@ -266,7 +248,7 @@ body {
 	text-align: left;
 	vertical-align: top;
 }
-.dlsize, .dlsize a{
+.dlsize {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 18px;
 	font-weight: bold;
@@ -287,4 +269,26 @@ img {
 }
 .clearboth {
 	clear: both;
+}
+
+/*攝影作品*/
+#contentPhoto {
+	width: 590px;
+	border-right: 8px solid #FFC17F;
+	text-align: center;
+}.photolist {
+	float: left;
+	background-image: url(images/photo_bg.gif);
+	background-repeat: no-repeat;
+	height: 135px;
+	width: 175px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+	margin-left: 15px;
+	padding-top: 30px;
+}
+.photolist p {
+	background-image: none;
+	background-repeat: no-repeat;
 }
